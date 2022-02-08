@@ -1,0 +1,23 @@
+body{
+background-color: rgb(99, 132, 175);
+font: normal 15pt Arial;
+}
+header{
+    color: cornsilk;
+    text-align:center ;
+
+}
+section{
+    background-color: rgb(231, 222, 191);
+    border-radius: 10px;
+    padding: 100px;
+    width: 200px;
+    margin:auto;
+    /* box-shadow: 5px, 5px, 5px black; */
+    box-shadow: 1px 3px 0,5px 4px rgba(201, 163, 171, 0.525);
+
+}
+footer{
+    color: cornsilk;
+    text-align:center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+    <style>
+        #area {
+          font: normal 40pt Arial;  
+          background-color: hsl(120, 100%, 20%);
+          color: rgb(241, 230, 229);
+          width: 1000px;
+          line-height: 500px;
+          text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="area">
+     <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" -->
+        interaja...Emcasa
+    </div>    
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        function clicar() {
+          a.innerText = "Click!-aki";
+          a.style.background = "red";
+          
+        }
+        function entrar() {
+            a.innerText = "Entou!"
+        }
+        function sair() {
+            a.innerText = "Saiu!" 
+            a.style.background ="green"
+            
+        }
+
+
+        // var a = window.document.getElementById("area")
+        // a.AddEventListener("click", clicar)
+        // a.addEventListener("mouseenter", entrar)
+        // a.addEventListener("mouseout",sair )
+        // function clicar () {
+        //     a.innerText = "Clicou!"
+        //     a.document.innrText = "red"
+        // }
+        // function entrar(){
+        //     a.innerText= "Entrou!"
+        // }
+        // function sair(){
+        //     a.innerText = "Saiu!"
+        //     a.style.background = "green"
+        // }
+        
+    </script>
+</body>
+</html>

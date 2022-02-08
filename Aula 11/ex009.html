@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificación de Naturalidad</title>
+</head>
+    
+    <body>
+        <h1>Sistema de Nacionalidade </h1>
+    Sua Nacionalidade: <input type="text" name="siNatxt" id="natxt">
+    <input type="button" value="nacio" onclick="nacionalidad()">
+    <div id="test"> Teste sua naturalidade
+    </div>
+    <script>
+            var SuPais = window.document.querySelector("input#natxt");
+            var nas = String(SuPais.value);
+        function nacionalidad() {
+            if ( nas == "Brasil"){
+                test.innerHTML = `Você e Naturalizado ${nas}; e esta vivendo em  ${nas}?`         
+            }
+            
+            //            
+            //  if (SuPais == "Brasil") {
+            //     console.log("Sou Brasileiro")
+            //  }else{
+            //     console.log("Sou estrangeiro");
+        }
+
+    </script>
+</body>
+</html>

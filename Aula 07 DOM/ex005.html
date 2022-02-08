@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 Curso em Vidio</title>
+    <style>
+        body{
+            background:rgba(211, 175, 114, 0.74);
+            color: rgb(236, 234, 223);
+        }
+    </style>
+</head>
+<body>
+<H1>Estudo com DOM </H1>
+<p>Aqui vai o resutado </p>
+<p>Aprendendo a trabalha com <strong>DOM</strong> em javascript</p>
+<div id= "msg"> Clique em mín</div>
+<script>
+    var corpo = window.document.body;
+    var p1= window.document.getElementsByTagName("p")[0]
+    window.document.write(p1.innerText)  
+    p1.style.color = "blue"
+    /* corpo.style.background = "black"
+     var d = window.document.getElementById("msg").innerText="Ola Sou Wagner"; Maneira 1°
+    */
+   
+
+   /* var d =window.document.getElementById("msg");
+    d.style.background = "green"
+    d.innerText = "estou aguardando...."
+    */ 
+     
+
+
+</script>
+</body>
+</html>
